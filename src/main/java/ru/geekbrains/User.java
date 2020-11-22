@@ -8,7 +8,7 @@ import java.util.List;
 @Table(name = "users")           // можно объявить таблицу в которой хранятся сущности
 //@NamedQuery(name = "User.findAll",query ="SELECT a from User a")
 
-@NamedQueries( {            // аннотция применяется к КЛАССУ
+@NamedQueries( {
         @NamedQuery(name = "User.findAll",query ="SELECT a from User a") ,
         @NamedQuery(name = "User.findByLogiтPetr",query ="SELECT a from User a where a.login='petr' ")
 }  )                  /* будет работать с любым именем,но рекамендуется писать имя класса как префикс
