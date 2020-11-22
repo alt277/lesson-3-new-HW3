@@ -18,9 +18,7 @@ public class MainWithCriteriaAPI {
                 .configure("hibernate.cfg.xml")
                 .buildSessionFactory();
         EntityManager em = emFactory.createEntityManager();
-//        em.createQuery("select u from Product u" +
-//                " where u.title like '%Iphone_11%' " +
-//                "and u.price is null");
+
         CriteriaBuilder cb= em.getCriteriaBuilder();
         CriteriaQuery<Product> query=cb.createQuery(Product.class); // ЧТО выбрать - соответствует Select p
         Root<Product> from =query.from(Product.class);  //  ГДЕ выбрать   - соответствует from Product  p
