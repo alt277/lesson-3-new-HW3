@@ -23,6 +23,7 @@
         <mapping class="ru.geekbrains.Contact"/>
         <mapping class="ru.geekbrains.Customer"/>
         <mapping class="ru.geekbrains.Product"/>
+        <mapping class="ru.geekbrains.Product2"/>
         <mapping class="ru.geekbrains.Ties"/>     <!--и не забыть  при добавлении-->
     </session-factory>
 </hibernate-configuration>
